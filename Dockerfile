@@ -1,4 +1,4 @@
-FROM maven:3.8.5-openjdk-21 AS builder
+FROM maven:3.9.6-eclipse-temurin:21-jdk-alpine as build
 WORKDIR /app
 COPY clinica_veterinaria/pom.xml .
 COPY clinica_veterinaria/src ./src
